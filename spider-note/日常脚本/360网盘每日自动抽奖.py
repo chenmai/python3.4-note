@@ -43,12 +43,14 @@ ActionChains(driver).move_to_element(m)    #鼠标移至个人中心
 
 j=driver.find_element_by_xpath("//*[@id='lottery-everyday']/i")
 ActionChains(driver).move_to_element(j)
-sleep(2)
+sleep(2)  #等待元素出现
 # 鼠标移至个人中心下方的隐藏列表中
 
 print(driver.find_element_by_xpath("//*[@id='lottery-everyday']/i").is_displayed())   #显示该隐藏元素现在是不是可以操控
 
 driver.find_element_by_xpath("//*[@id='lottery-everyday']/i").click()   #点击每日抽奖
+sleep(2)
+driver.find_element_by_xpath("//*[@id='BasePanel1']/span/a").click()   #关掉弹出窗口
 
 
 print (driver.title)
