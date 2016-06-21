@@ -12,8 +12,8 @@ from selenium import webdriver
 
 
 # mac下的设置
-chromedriver = "/Users/duomai/Documents/chromedriver/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
+# chromedriver = "/Users/duomai/Documents/chromedriver/chromedriver"
+# os.environ["webdriver.chrome.driver"] = chromedriver
 
 
 filename ="360网盘.txt"  
@@ -25,7 +25,8 @@ for i in range(lines//2):
     a=myfile.readline()
     b=myfile.readline()
 
-    driver = webdriver.Chrome(chromedriver)
+#     driver = webdriver.Chrome(chromedriver)
+    driver = webdriver.Chrome()
     driver.get('http://c99.yunpan.360.cn/')
       
     driver.maximize_window() #最大化
