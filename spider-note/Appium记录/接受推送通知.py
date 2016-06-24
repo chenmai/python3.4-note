@@ -1,3 +1,8 @@
+'''
+Created on 2016年6月24日
+
+@author: duomai
+'''
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
